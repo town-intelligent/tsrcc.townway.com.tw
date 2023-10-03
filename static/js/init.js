@@ -139,3 +139,6 @@ navbar(group);
 
 // footer
 add_footer();
+
+// Translate
+$("body").t2s();
