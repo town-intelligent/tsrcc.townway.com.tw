@@ -73,6 +73,7 @@ const str_project_delete_modal = `
       </div>
     </div>
 `
+
 const str_project_management_modal = `
 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
   <div class="modal-content">
@@ -128,6 +129,17 @@ const str_project_management_modal = `
                     </div>
                   </div>
                   <a href="/backend/heat_map.html?uuid=UUID_PROJECT" class="stretched-link"></a>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="card card-button" style="height: 100px;">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-center">
+                      <img src="/static/imgs/menu-sroi.svg" alt="" style="width:50px">
+                      <p class="mt-2 mb-0">SROI</p>
+                    </div>
+                  </div>
+                  <a href="/backend/cms_sroi.html?uuid=UUID_PROJECT" class="stretched-link"></a>
                 </div>
               </div>
               <div class="col-2">

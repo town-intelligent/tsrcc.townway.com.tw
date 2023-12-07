@@ -1,6 +1,5 @@
 import { list_plan_tasks, plan_info } from "./plan.js";
 import { task_submit, get_task_info, onclickuploadTaskCover } from "./tasks.js";
-import { get_sorted_tasks } from "./utils/transformers.js";
 export function add_parent_task_block(obj_task = null) {
   // Params
   var queryString = window.location.search;
@@ -173,10 +172,10 @@ export function set_page_info_cms_impact(uuid) {
   const tasks = list_parent_task_uuid.tasks.map((task_uuid) =>
     get_task_info(task_uuid)
   );
-  const sorted_tasks = get_sorted_tasks(tasks);
-  sorted_tasks.map((task) => {
-    add_parent_task_block(task);
-  });
+  for (var index = 0; index < list_parent_task_uuid.tasks.length; index++) {
+    var obj_task = get_task_info(list_parent_task_uuid.tasks[index]);
+    add_parent_task_block(obj_task);
+  }
 }
 // Add_parent_tasks
 $(function () {
