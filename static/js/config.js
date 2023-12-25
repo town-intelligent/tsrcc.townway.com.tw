@@ -1,8 +1,8 @@
-HOST_URL_EID = "https://beta-eid.townway.com.tw";
-HOST_URL_TPLANET_DAEMON = "https://beta-tplanet-backend.townway.com.tw";
+HOST_URL_EID = "https://eid.townway.com.tw";
+HOST_URL_TPLANET_DAEMON = "https://tplanet-backend.townway.com.tw";
 
 // EID
-HOST_URL_EID = "https://alpha-eid-tsrcc.townway.com.tw/";
+HOST_URL_EID = "https://beta-eid-tsrcc.townway.com.tw/";
 
 // Site hoster
 SITE_HOSTERS = ["tsrcc2022@gmail.com"]
